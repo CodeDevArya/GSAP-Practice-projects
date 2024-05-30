@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #111;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+#page1,
+#page1,
+#page3 {
+    width: 100%;
+    height: 100%;
+}
+
+#move {
+    background-color: #D9FF06;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.marque img {
+    width: 100px;
+    padding: 5vmax 0;
+}
+
+.marque h1 {
+    font-size: 70px;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+}
+
+.marque {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
