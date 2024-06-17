@@ -1,0 +1,262 @@
+@font-face {
+    font-family: product Sans;
+    src: url(/assets/Fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: product SansB;
+    src: url(/assets/Fonts/Product\ Sans\ Bold.ttf);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: product Sans;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 0, 0);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    gap: 30px;
+}
+
+#one {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+#one {
+    font-size: 12vw;
+    font-family: product SansB;
+    color: #fff;
+}
+
+.fanta {
+    width: 40%;
+    position: absolute;
+    z-index: 2;
+}
+
+.orange-cut {
+    width: 15%;
+    top: 7%;
+    left: 33%;
+    z-index: 1;
+    position: absolute;
+}
+
+.orange {
+    width: 18%;
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    right: 30%;
+}
+
+#leaf {
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+    position: absolute;
+    width: 18%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#leaf2 {
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#leaf3 {
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+
+.two {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #4d231c;
+}
+
+.lft-two,
+.rght-two {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.lft-two svg {
+    margin-top: 50vh;
+    width: 90%;
+    transform: rotateX(50deg);
+}
+
+.rght-two h1 {
+    color: #fff;
+    font-size: 5vw;
+}
+
+.rght-two p {
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    height: 70vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card h1 {
+    margin-top: 40vh;
+    font-size: 3vw;
+}
+
+.card button {
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: rgb(255, 149, 0);
+    padding: 1vw 2vw;
+}
+
+#cocacola {
+    top: -15%;
+    position: absolute;
+    width: 52%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+#pepsi {
+    top: -15%;
+    position: absolute;
+    width: 76%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+.lemon {
+    top: -30%;
+    position: absolute;
+    left: 50%;
+    width: 25vw;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.open {
+    width: 40%;
+    right: 0;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(150deg, rgba(255, 166, 0, 0.326), rgba(255, 94, 0, 0.345));
+    transform: translate(500%);
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+}
+
+.cross {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10%;
+}
+
+.cross img {
+    cursor: pointer;
+}
